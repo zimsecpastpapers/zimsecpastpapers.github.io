@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zimsec Papers Download Site | Free O Level & A Level Past Papers PDF</title>
+    <meta name="description" content="Download free Zimsec past papers PDF. O Level and A Level Maths, Science, English, Shona, Geography and more. No login, No popups.">
+    <meta name="keywords" content="zimsec past papers, zimsec pdf download, o level papers, a level papers, zimsec papers download site">
+    
+    <!-- Cloudflare Analytics - add your ID here later -->
+    <!-- <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "YOUR_TOKEN"}'></script> -->
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background: #f5f5f5; color: #333; line-height: 1.6; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+        
+        header { background: #0d47a1; color: white; padding: 30px 20px; text-align: center; border-radius: 8px; margin-bottom: 20px; }
+        header h1 { font-size: 2em; margin-bottom: 10px; }
+        header p { font-size: 1.1em; opacity: 0.9; }
+        
+        .search-box { margin: 20px 0; }
+        .search-box input { width: 100%; padding: 15px; font-size: 1.1em; border: 2px solid #0d47a1; border-radius: 8px; }
+        
+        .filters { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px; justify-content: center; }
+        .filter-btn { padding: 10px 20px; border: 2px solid #0d47a1; background: white; color: #0d47a1; border-radius: 25px; cursor: pointer; font-weight: bold; }
+        .filter-btn.active, .filter-btn:hover { background: #0d47a1; color: white; }
+        
+        .subjects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .subject-card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .subject-card h2 { color: #0d47a1; margin-bottom: 10px; }
+        .subject-card p { color: #666; margin-bottom: 15px; }
+        .paper-link { display: block; padding: 10px; margin: 5px 0; background: #e3f2fd; color: #0d47a1; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        .paper-link:hover { background: #bbdefb; }
+        
+        footer { text-align: center; margin-top: 40px; padding: 20px; color: #666; }
+        .badge { background: #4caf50; color: white; padding: 3px 8px; font-size: 0.8em; border-radius: 4px; margin-left: 5px; }
+    </style>
+<style>
+    /* ===== VARIABLES ===== */
+    :root {
+        --primary: #0a2a66;
+        --primary-light: #153e8f;
+        --primary-dark: #061a3d;
+        --accent: #00bcd4;
+        --accent-dark: #0097a7;
+        --success: #16a34a;
+        --warning: #f59e0b;
+        --danger: #dc2626;
+        --bg: #f8fafc;
+        --bg-dark: #e2e8f0;
+        --card: #ffffff;
+        --text: #0f172a;
+        --text-light: #475569;
+        --text-muted: #94a3b8;
+        --border: #cbd5e1;
+        --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+        --shadow: 0 4px 12px rgba(0,0,0,0.08);
+        --shadow-lg: 0 12px 30px rgba(10, 42, 102, 0.15);
+        --radius: 12px;
+        --radius-lg: 16px;
+    }
+
+    /* ===== RESET ===== */
+    * { 
+        margin: 0; 
+        padding: 0; 
+        box-sizing: border-box; 
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    html { scroll-behavior: smooth; }
+    body { 
+        background: var(--bg);
+        background-image: 
+            radial-gradient(circle at 20% 20%, rgba(0, 188, 212, 0.05) 0%, transparent 50%),
+            radial-gradient(circle at 80% 80%, rgba(10, 42, 102, 0.05) 0%, transparent 50%);
+        color: var(--text); 
+        line-height: 1.65;
+        min-height: 100vh;
+    }
+
+    .container { 
+        max-width: 1240px; 
+        margin: 0 auto; 
+        padding: 24px 20px; 
+    }
+    
+    /* ===== HEADER HERO ===== */
+    header { 
+        background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 50%, var(--accent-dark) 100%);
+        color: white; 
+        padding: 60px 30px; 
+        text-align: center; 
+        border-radius: var(--radius-lg); 
+        margin-bottom: 35px;
+        box-shadow: var(--shadow-lg);
+        position: relative;
+        overflow: hidden;
+    }
+    header::after {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: 
+            linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.05) 50%, transparent 100%);
+        animation: shimmer 3s infinite;
+    }
+    @keyframes shimmer {
+        0% { transform: translateX(-100%); }
+        100% { transform: translateX(100%); }
+    }
+    header h1 { 
+        font-size: 2.8em; 
+        margin-bottom: 12px; 
+        font-weight: 900;
+        letter-spacing: -1px;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        position: relative;
+        z-index: 1;
+    }
+    header p { 
+        font-size: 1.2em; 
+        opacity: 0.95;
+        font-weight: 500;
+        max-width: 600px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+    }
+    .stats {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 25px;
+        flex-wrap: wrap;
+        position: relative;
+        z-index: 1;
+    }
+    .stat {
+        background: rgba(255,255,255,0.12);
+        padding: 10px 18px;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 0.9em;
+        backdrop-filter: blur(10px);
+    }
+
+    /* ===== SEARCH SECTION ===== */
+    .search-section {
+        background: var(--card);
+        padding: 25px;
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        margin-bottom: 30px;
+        border: 1px solid var(--border);
+    }
+    .search-box { 
+        margin-bottom: 18px; 
+        position: relative;
+    }
+    .search-box input { 
+        width: 100%; 
+        padding: 18px 22px; 
+        font-size: 1.1em; 
+        border: 2px solid var(--border);
+        border-radius: 10px; 
+        background: var(--bg);
+        color: var(--text);
+        font-weight: 500;
+        transition: all 0.3s;
+    }
+    .search-box input:focus {
+        outline: none;
+        border-color: var(--accent);
+        background: var(--card);
+        box-shadow: 0 0 0 4px rgba(0, 188, 212, 0.12);
+    }
+    .search-box input::placeholder {
+        color: var(--text-muted);
+        font-weight: 400;
+    }
+
+    /* ===== FILTER TABS ===== */
+    .filters { 
+        display: flex; 
+        gap: 10px; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+    .filter-btn { 
+        padding: 12px 24px; 
+        border: 2px solid var(--border); 
+        background: var(--bg); 
+        color: var(--text-light); 
+        border-radius: 50px; 
+        cursor: pointer; 
+        font-weight: 700;
+        font-size: 0.95em;
+        transition: all 0.25s;
+        position: relative;
+    }
+    .filter-btn:hover { 
+        border-color: var(--primary);
+        color: var(--primary);
+        transform: translateY(-2px);
+    }
+    .filter-btn.active { 
+        background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+        color: white; 
+        border-color: var(--primary);
+        box-shadow: 0 4px 14px rgba(10, 42, 102, 0.3);
+    }
+
+    /* ===== GRID ===== */
+    .subjects-grid { 
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); 
+        gap: 24px; 
+    }
+    
+    /* ===== SUBJECT CARDS ===== */
+    .subject-card { 
+        background: var(--card); 
+        padding: 26px; 
+        border-radius: var(--radius); 
+        box-shadow: var(--shadow);
+        border: 1px solid var(--border);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        overflow: hidden;
+    }
+    .subject-card::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(90deg, var(--accent) 0%, var(--primary) 100%);
+        transform: scaleX(0);
+        transition: transform 0.3s;
+    }
+    .subject-card:hover::before {
+        transform: scaleX(1);
+    }
+    .subject-card:hover {
+        transform: translateY(-6px);
+        box-shadow: var(--shadow-lg);
+        border-color: var(--accent);
+    }
+    .card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        margin-bottom: 12px;
+    }
+    .subject-card h2 { 
+        color: var(--primary); 
+        font-size: 1.4em;
+        font-weight: 900;
+        letter-spacing: -0.5px;
+    }
+    .subject-card p { 
+        color: var(--text-light); 
+        margin-bottom: 18px;
+        font-size: 0.92em;
+        font-weight: 500;
+    }
+
+    /* ===== PAPER LINKS LIST ===== */
+    .paper-list { margin-top: 15px; }
+    .paper-link { 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 13px 16px; 
+        margin: 8px 0; 
+        background: var(--bg);
+        color: var(--primary); 
+        text-decoration: none; 
+        border-radius: 9px; 
+        font-weight: 700;
+        font-size: 0.95em;
+        transition: all 0.25s;
+        border: 1px solid transparent;
+    }
+    .paper-link:hover { 
+        background: linear-gradient(90deg, var(--accent) 0%, var(--accent-dark) 100%);
+        color: white;
+        border-color: var(--accent-dark);
+        padding-left: 20px;
+        box-shadow: 0 4px 12px rgba(0, 188, 212, 0.25);
+    }
+    .paper-link span.year {
+        background: rgba(10, 42, 102, 0.1);
+        color: var(--primary);
+        padding: 3px 10px;
+        border-radius: 20px;
+        font-size: 0.8em;
+        font-weight: 800;
+    }
+    .paper-link:hover span.year {
+        background: rgba(255,255,255,0.2);
+        color: white;
+    }
+
+    /* ===== BADGES ===== */
+    .badge { 
+        background: linear-gradient(135deg, var(--success) 0%, #15803d 100%);
+        color: white; 
+        padding: 5px 12px; 
+        font-size: 0.75em; 
+        border-radius: 20px; 
+        font-weight: 800;
+        white-space: nowrap;
+    }
+    .badge.new { background: linear-gradient(135deg, var(--warning) 0%, #d97706 100%); }
+
+    /* ===== INFO BOX ===== */
+    .info-box {
+        background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+        border: 1px solid #bfdbfe;
+        padding: 20px;
+        border-radius: var(--radius);
+        margin: 30px 0;
+        text-align: center;
+    }
+    .info-box h3 { color: var(--primary); margin-bottom: 8px; }
+
+    /* ===== FOOTER ===== */
+    footer { 
+        text-align: center; 
+        margin-top: 60px; 
+        padding: 35px 20px; 
+        color: var(--text-light);
+        background: var(--card);
+        border-radius: var(--radius);
+        border: 1px solid var(--border);
+        box-shadow: var(--shadow-sm);
+    }
+    footer p { margin: 5px 0; font-weight: 500; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+        header { padding: 40px 20px; }
+        header h1 { font-size: 1.9em; }
+        .container { padding: 16px; }
+        .subjects-grid { grid-template-columns: 1fr; }
+        .stats { gap: 12px; }
+    }
+    @media (max-width: 480px) {
+        header h1 { font-size: 1.6em; }
+        .filter-btn { padding: 10px 16px; font-size: 0.9em; }
+    }
+
+    /* ===== LOADING ANIMATION ===== */
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .subject-card {
+        animation: fadeIn 0.5s ease-out backwards;
+    }
+    .subject-card:nth-child(1) { animation-delay: 0.1s; }
+    .subject-card:nth-child(2) { animation-delay: 0.2s; }
+    .subject-card:nth-child(3) { animation-delay: 0.3s; }
+</style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Zimsec Papers Download Site</h1>
+            <p>Free Download O Level & A Level Past Papers + Marking Schemes. No Login Required.</p>
+        </header>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search: Maths 2023, Combined Science P2, English...">
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" onclick="filterPapers('all')">All</button>
+            <button class="filter-btn" onclick="filterPapers('o-level')">O-Level</button>
+            <button class="filter-btn" onclick="filterPapers('a-level')">A-Level</button>
+            <button class="filter-btn" onclick="filterPapers('maths')">Maths</button>
+            <button class="filter-btn" onclick="filterPapers('science')">Science</button>
+        </div>
+
+        <div class="subjects-grid" id="papersContainer">
+            
+            <!-- O-LEVEL MATHS -->
+            <div class="subject-card" data-category="o-level maths">
+                <h2>O-Level Mathematics <span class="badge">10 Papers</span></h2>
+                <p>Paper 1 & 2. 2019 - 2023</p>
+                <a href="/o-level/maths/maths-p1-nov-2023.html" class="paper-link">Maths P1 Nov 2023</a>
+                <a href="/o-level/maths/maths-p2-nov-2023.html" class="paper-link">Maths P2 Nov 2023</a>
+                <a href="/o-level/maths/maths-p1-june-2023.html" class="paper-link">Maths P1 June 2023</a>
+                <a href="/o-level/maths/maths-p1-nov-2022.html" class="paper-link">Maths P1 Nov 2022</a>
+                <a href="/o-level/maths/maths-p1-nov-2021.html" class="paper-link">Maths P1 Nov 2021</a>
+            </div>
+
+            <!-- O-LEVEL COMBINED SCIENCE -->
+            <div class="subject-card" data-category="o-level science">
+                <h2>O-Level Combined Science <span class="badge">10 Papers</span></h2>
+                <p>Paper 1, 2 & 3. 2019 - 2023</p>
+                <a href="/o-level/combined-science/cs-p1-nov-2023.html" class="paper-link">Combined Science P1 Nov 2023</a>
+                <a href="/o-level/combined-science/cs-p2-nov-2023.html" class="paper-link">Combined Science P2 Nov 2023</a>
+                <a href="/o-level/combined-science/cs-p1-june-2023.html" class="paper-link">Combined Science P1 June 2023</a>
+                <a href="/o-level/combined-science/cs-p1-nov-2022.html" class="paper-link">Combined Science P1 Nov 2022</a>
+                <a href="/o-level/combined-science/cs-p1-nov-2021.html" class="paper-link">Combined Science P1 Nov 2021</a>
+            </div>
+
+            <!-- O-LEVEL ENGLISH -->
+            <div class="subject-card" data-category="o-level">
+                <h2>O-Level English <span class="badge">10 Papers</span></h2>
+                <p>Paper 1 & 2. 2019 - 2023</p>
+                <a href="/o-level/english/english-p1-nov-2023.html" class="paper-link">English P1 Nov 2023</a>
+                <a href="/o-level/english/english-p2-nov-2023.html" class="paper-link">English P2 Nov 2023</a>
+                <a href="/o-level/english/english-p1-nov-2022.html" class="paper-link">English P1 Nov 2022</a>
+            </div>
+
+            <!-- O-LEVEL SHONA -->
+            <div class="subject-card" data-category="o-level">
+                <h2>O-Level Shona <span class="badge">10 Papers</span></h2>
+                <p>Paper 1 & 2. 2019 - 2023</p>
+                <a href="/o-level/shona/shona-p1-nov-2023.html" class="paper-link">Shona P1 Nov 2023</a>
+                <a href="/o-level/shona/shona-p2-nov-2023.html" class="paper-link">Shona P2 Nov 2023</a>
+            </div>
+
+            <!-- O-LEVEL GEOGRAPHY -->
+            <div class="subject-card" data-category="o-level">
+                <h2>O-Level Geography <span class="badge">10 Papers</span></h2>
+                <p>Paper 1, 2 & 3. 2019 - 2023</p>
+                <a href="/o-level/geography/geo-p1-nov-2023.html" class="paper-link">Geography P1 Nov 2023</a>
+                <a href="/o-level/geography/geo-p2-nov-2023.html" class="paper-link">Geography P2 Nov 2023</a>
+            </div>
+
+            <!-- A-LEVEL PHYSICS -->
+            <div class="subject-card" data-category="a-level science">
+                <h2>A-Level Physics <span class="badge">10 Papers</span></h2>
+                <p>Paper 1, 2 & 3. 2019 - 2023</p>
+                <a href="/a-level/physics/physics-p1-nov-2023.html" class="paper-link">Physics P1 Nov 2023</a>
+                <a href="/a-level/physics/physics-p2-nov-2023.html" class="paper-link">Physics P2 Nov 2023</a>
+            </div>
+
+        </div>
+
+        <footer>
+            <p>© 2026 Zimsec Papers Download Site | Made for Zim Students</p>
+            <p>Request a paper: WhatsApp us</p>
+        </footer>
+    </div>
+
+    <script>
+        // SEARCH + FILTER FUNCTION
+        const searchInput = document.getElementById('searchInput');
+        const cards = document.querySelectorAll('.subject-card');
+
+        searchInput.addEventListener('keyup', function() {
+            let filter = searchInput.value.toLowerCase();
+            cards.forEach(card => {
+                let text = card.textContent.toLowerCase();
+                card.style.display = text.includes(filter) ? '' : 'none';
+            });
+        });
+
+        function filterPapers(category) {
+            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            cards.forEach(card => {
+                if (category === 'all') {
+                    card.style.display = '';
+                } else {
+                    card.style.display = card.dataset.category.includes(category) ? '' : 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
