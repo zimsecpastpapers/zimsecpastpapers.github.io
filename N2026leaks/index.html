@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://quge5.com/88/tag.min.js"
+        data-zone="288292"
+        async
+        data-cfasync="false">
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ZIMSEC November 2026 — Paper Leak</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f4f6f8;color:#111}
+header{background:#071d3a;color:white;padding:18px;text-align:center}
+header h1{margin:0;font-size:24px}
+header p{margin:6px 0 0;color:#b9d7ff}
+.container{max-width:700px;margin:35px auto;padding:20px}
+.warning{background:#b40000;color:white;padding:15px;border-radius:8px;text-align:center;font-weight:bold}
+.card{background:white;margin-top:20px;padding:25px;border-radius:12px;box-shadow:0 3px 15px #0002}
+.status{color:#087f23;font-weight:bold}
+.paper{border:1px solid #ddd;padding:15px;margin:12px 0;border-radius:8px}
+button{width:100%;padding:15px;border:0;border-radius:8px;background:#0757a6;color:white;font-size:16px;cursor:pointer}
+button:hover{background:#063e78}
+.progress{display:none;margin-top:20px}
+.bar{height:12px;background:#ddd;border-radius:20px;overflow:hidden}
+.fill{height:100%;width:0;background:#0757a6}
+.result{display:none;text-align:center;padding:25px;background:#fff3cd;border-radius:10px;margin-top:20px}
+.big{font-size:35px}
+footer{text-align:center;margin:45px 10px 20px;color:#777;font-size:13px}
+.prank{font-size:18px;font-weight:bold;color:#c40000}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>ZIMSEC NOVEMBER 2026</h1>
+<p>Examination Information Portal</p>
+</header>
+
+<div class="container">
+
+<div class="warning">
+⚠️ URGENT EXAMINATION NOTICE
+</div>
+
+<div class="card">
+<h2>November 2026 Examination Papers</h2>
+
+<p><b>Status:</b> <span class="status">● Documents detected</span></p>
+
+<p>
+A collection of files allegedly containing examination papers
+has been uploaded to this temporary portal.
+</p>
+
+<div class="paper">
+<b>📄 Mathematics — November 2026</b><br>
+Status: Available
+</div>
+
+<div class="paper">
+<b>📄 Physics — November 2026</b><br>
+Status: Available
+</div>
+
+<div class="paper">
+<b>📄 Chemistry — November 2026</b><br>
+Status: Available
+</div>
+
+<button onclick="downloadFake()">
+🔐 VERIFY & ACCESS PAPERS
+</button>
+
+<div class="progress" id="progress">
+<p>Verifying document...</p>
+<div class="bar"><div class="fill" id="fill"></div></div>
+<p id="percent">0%</p>
+</div>
+
+<div class="result" id="result">
+<div class="big">😂</div>
+<h2>YOU GOT PRANKED!</h2>
+<p>
+There are no leaked examination papers here.
+</p>
+<p>
+This page was created purely as a joke.
+</p>
+</div>
+
+</div>
+
+<footer>
+<p>
+ZIMSEC November 2026 Examination Portal
+</p>
+
+<p class="prank">
+⚠️ THIS IS A PRANK WEBSITE — NO REAL EXAM PAPERS ARE HERE.
+</p>
+
+<p>
+Do not share fake examination leaks as genuine information.
+</p>
+</footer>
+
+</div>
+
+<script>
+function downloadFake(){
+    document.querySelector("button").disabled=true;
+    document.getElementById("progress").style.display="block";
+
+    let n=0;
+
+    let timer=setInterval(function(){
+        n+=5;
+        document.getElementById("fill").style.width=n+"%";
+        document.getElementById("percent").textContent=n+"%";
+
+        if(n>=100){
+            clearInterval(timer);
+            document.getElementById("result").style.display="block";
+            document.getElementById("result").scrollIntoView({
+                behavior:"smooth"
+            });
+        }
+    },100);
+}
+</script>
+
+</body>
+</html>
+
